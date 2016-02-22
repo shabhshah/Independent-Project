@@ -18,8 +18,8 @@ width, height = photo.size
 values = []
 
 print ""
-for y in range(0, height):
-    for x in range(0, width):
+for y in xrange(0, height):
+    for x in xrange(0, width):
     	RGB = photo.getpixel((x,y))
     	print (x, y), RGB
     	values.append(str(RGB))
